@@ -8,7 +8,7 @@ document.getElementById("btn-submit").addEventListener("click", function () {
   const password = passwordField.value;
   console.log(password);
 
-  if (email === "sakifhridoy@gmail.com" && password === "secret") {
+  if (email === "mail@mail.com" && password === "secret") {
     window.location.href = "bank.html";
   } else {
     console.log("invalid user");
