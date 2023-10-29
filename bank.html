@@ -15,20 +15,20 @@
     </header>
     <main>
       <section class="mt-12">
-        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
-          <div class="bg-green-400 p-8 rounded-xl">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+          <div class="bg-green-400 p-8 rounded-xl text-white">
             <h4 class="text-2xl">Deposit</h4>
-            <h2 class="text-5xl">$00</h2>
+            <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
           </div>
 
-          <div class="bg-yellow-500 p-8 rounded-xl">
+          <div class="bg-yellow-500 p-8 rounded-xl text-white">
             <h4 class="text-2xl">Withdraw</h4>
-            <h2 class="text-5xl">$00</h2>
+            <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
           </div>
 
-          <div class="bg-violet-400 p-8 rounded-xl">
+          <div class="bg-violet-400 p-8 rounded-xl text-white">
             <h4 class="text-2xl">Balance</h4>
-            <h2 class="text-5xl">$00</h2>
+            <h2 class="text-5xl">$<span id="balance-total">1250</span></h2>
           </div>
         </div>
       </section>
@@ -38,7 +38,7 @@
           <div class="bg-indigo-400 p-8 rounded-xl">
             <h4 class="text-2xl mb-2">Please Deposit</h4>
             <input
-              class="w-9/12 block mb-2 px-3 py-1 rounded-lg"
+              class="w-9/12 block mb-2 px-3 py-1 rounded-lg text-black"
               type="text"
               name=""
               id="deposit-field"
@@ -47,16 +47,16 @@
 
             <button
               id="btn-deposit"
-              class="bg-blue-900 px-8 py-2 mt-3 text-white hover:bg-blue-900 font-medium rounded-lg"
+              class="bg-blue-900 px-8 py-2 mt-3 text-white hover:bg-blue-900 font-medium rounded-lg "
             >
               Deposit
             </button>
           </div>
 
           <div class="bg-violet-400 p-8 rounded-xl">
-            <h4 class="text-2xl mb-2">Please Deposit</h4>
+            <h4 class="text-2xl mb-2">Please Withdraw</h4>
             <input
-              class="w-9/12 block mb-2 px-3 py-1 rounded-lg"
+              class="w-9/12 block mb-2 px-3 py-1 rounded-lg text-black"
               type="text"
               name=""
               id="user-email"
@@ -74,5 +74,7 @@
         </div>
       </section>
     </main>
+    <script src="/js/deposit.js"></script>
+    <script src="/js/withdraw.js"></script>
   </body>
 </html>
